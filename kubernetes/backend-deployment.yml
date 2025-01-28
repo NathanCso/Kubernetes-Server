@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-nodejs
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: backend-nodejs
+  template:
+    metadata:
+      labels:
+        app: backend-nodejs
+    spec:
+      containers:
+        - name: backend-nodejs
+          image: /backend-nodejs:latest
+          ports:
+            - containerPort: 5000
