@@ -1,6 +1,6 @@
 # Kubernetes-Server
-Démonstration : Application Node.js et React avec Kubernetes
-Ce projet est une démonstration simple d'une application web composée :
+Application Node.js et React avec Kubernetes
+Ce projet est une démonstration simple d'une application web composée de :
 
 Backend : API créée avec Node.js.
 Frontend : Interface utilisateur développée avec React.
