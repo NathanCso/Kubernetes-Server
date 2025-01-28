@@ -1,35 +1,36 @@
 # Kubernetes-Server
-Application Node.js et React avec Kubernetes
-Ce projet est une démonstration simple d'une application web composée de :
+🖥️ Démonstration : Application Node.js & React avec Kubernetes
+Ce projet est une démonstration d'une application web simple orchestrée avec Docker et Kubernetes.
 
-Backend : API créée avec Node.js.
+Backend : API construite avec Node.js.
 Frontend : Interface utilisateur développée avec React.
-Les deux applications sont conteneurisées avec Docker et orchestrées avec Kubernetes.
+Orchestration : Déploiement via Kubernetes.
+🚨 Note : Ce projet est fourni uniquement à titre indicatif et n'est pas destiné à être utilisé en production.
 
-Structure du Projet
+📂 Structure du Projet
 bash
 Copier
 Modifier
 /backend/    -> API Node.js  
 /frontend/   -> Interface React  
 /k8s/        -> Manifests Kubernetes (déploiement et services)  
-Commandes Essentielles
-Docker (localement)
-Construire les images :
+🚀 Lancer le Projet
+🐳 Avec Docker Compose
+Construire les images Docker :
 
 bash
 Copier
 Modifier
 docker build -t backend-nodejs ./backend  
 docker build -t frontend-react ./frontend  
-Lancer avec Docker Compose :
+Démarrer les conteneurs :
 
 bash
 Copier
 Modifier
 docker-compose up --build  
-Kubernetes (cluster)
-Déployer dans Kubernetes :
+☸️ Avec Kubernetes
+Appliquer les fichiers de configuration :
 
 bash
 Copier
@@ -41,6 +42,10 @@ bash
 Copier
 Modifier
 kubectl get pods  
-Notes
-Ce projet est fourni à titre indicatif et ne vise pas à être utilisé en production.
+📖 À Propos
+Ce projet a été conçu dans un but éducatif pour montrer :
+
+La conteneurisation d'applications avec Docker.
+Le déploiement et l'orchestration avec Kubernetes.
+
 
